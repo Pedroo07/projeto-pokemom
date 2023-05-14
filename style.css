@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #5e5b5bad;
+    color: #333333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+body.modo-escuro {
+    background-color: #212121;
+    color: #f5f5f5;
+}
+
+header .logo,
+.imagem-botao {
+    width: 30px;
+    transition: 0.2s ease-in-out;
+}
+
+header #botao-alterar-tema {
+    background: none;
+    border: none;
+    cursor: pointer;
+
+}
+
+header .logo:hover,
+.imagem-botao:hover {
+    transform: scale(1.1);
+}
+
+main {
+    padding: 25px;
+
+}
+
+.listagem-pokemom {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.cartao-pokemom {
+    background-color: #d8e3ec;
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 13px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+.cartao-pokemom:hover {
+    background-color: #96d9d6;
+    transform: scale(1.041);
+}
+
+.modo-escuro .cartao-pokemom {
+    background-color: #a8a8a8;
+
+}
+
+.modo-escuro .cartao-pokemom:hover {
+    background-color: #466d6d;
+}
+
+.informacoes {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #333333;
+}
+
+.informacoes span {
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+main .cartao-pokemom .gif {
+    width: 90px;
+    height: 90px;
+
+}
+
+.tipos {
+    display: flex;
+    gap: 15px;
+
+}
+
+main .cartao-pokemom .tipo {
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.grama {
+    background-color: #7ac74c;
+}
+
+.veneno {
+    background-color: #cf58f3fb;
+}
+
+.fogo {
+    background-color: #ee8130;
+}
+
+.agua {
+    background-color: #6390f0;
+}
+
+.inseto {
+    background-color: #a6b91a;
+}
+
+.voador {
+    background-color: #94aee7;
+}
+
+.aço {
+    background-color: #777474;
+}
+
+.lutador {
+    background-color: rgb(158, 39, 3);
+}
+
+main .descricao {
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 14px;
+    padding-right: 10px;
+}
+
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #f1e9e9;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #582965;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+}
